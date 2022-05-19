@@ -6,6 +6,7 @@
       <class name="practiceTestNG.AddAccount">
         <methods>
           <include name="addcustomer"/>
+          <include name="readConfig"/>
           <include name="init"/>
         </methods>
       </class> <!-- practiceTestNG.AddAccount -->
