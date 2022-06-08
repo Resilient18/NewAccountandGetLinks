@@ -41,17 +41,19 @@ public class AddAccount {
 	By ADDRESS_FIELD  = By.xpath("//input[@id = 'address']");
 	By CITY_FIELD = By.xpath("//input[@id = 'city']");
 	By SAVE_FIELD = By.xpath("//button[@id = 'submit']");
+	By COUNTRY_FIELD = By.xpath("//select[@name = 'country']");
 	By LIST_CUSTOMER = By.xpath("//div[@class = 'sidebar-collapse']/descendant::a[8]");
 	
 	//Test Data 
 		String userName = "demo@techfios.com";
 		String password = "abc123";
-		String fullname = "Raji#aacc#3";
+		String fullname = "Raji#Checking#3";
 		String company = "Techfios";
 		String email = "janedoe2@techfios.com";
-		String phone = "1345678";
+		String phone = "1445678";
 		String address = "NTechnology ln";
 		String city = "NewYork";
+		String country = "Belize";
 		
 		
 		@BeforeSuite
@@ -109,7 +111,7 @@ public void loginTest() {
 		driver.findElement(ADDRESS_FIELD).sendKeys(address);
 		driver.findElement(CITY_FIELD).sendKeys(city);
 		//choosing country from the options given
-		//sel.selectByVisibleText(country);
+		sel.selectByVisibleText(country);
 		driver.findElement(SAVE_FIELD).click();
 		
 		driver.findElement(LIST_CUSTOMER).click();

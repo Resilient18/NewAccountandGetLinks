@@ -32,7 +32,6 @@ public class GetAllLinks {
 			
 			System.out.println(element.getAttribute("href"));
 			
-
 		}
 		System.out.println("All links are printed.");
 	}
